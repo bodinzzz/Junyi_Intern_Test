@@ -1,14 +1,14 @@
 const reverseString = (str) => {
-  const reverseString = str.split("").reverse().join("");
-  return reverseString;
+  const reverseStr = str.split("").reverse().join("");
+  return reverseStr;
 };
 
 const reverseStringInArray = (str) => {
-  let stringArray = str.split(" ");
+  const stringArray = str.split(" ");
   const reverseStringArray = stringArray.map((string) => {
     return reverseString(string);
   });
-  let reverseStr = reverseStringArray.join(" ");
+  const reverseStr = reverseStringArray.join(" ");
   return reverseStr;
 };
 
